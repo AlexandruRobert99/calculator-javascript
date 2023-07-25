@@ -1,3 +1,109 @@
+
+.calculator {
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color:gainsboro;
+}
+
 .grid-buttons {
-    display: inline-grid;
+    display: grid;
+    grid-template-areas:
+    '. . clear backspace' 
+    'key7 key8 key9 division'
+    'key4 key5 key6 multiplication'
+    'key1 key2 key3 minus'
+    'key0 point equal plus';
+    
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+#key0 {
+    grid-area: key0;
+}
+
+#key1 {
+    grid-area: key1;
+}
+
+#key2 {
+    grid-area: key2;
+}
+
+#key3 {
+    grid-area: key3;
+}
+
+#key4 {
+    grid-area: key4;
+}
+
+#key5 {
+    grid-area: key5;
+}
+
+#key6 {
+    grid-area: key6;
+}
+
+#key7 {
+    grid-area: key7;
+}
+
+#key8 {
+    grid-area: key8;
+}
+
+#key9 {
+    grid-area: key9;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#multiplication {
+    grid-area: multiplication;
+}
+
+#division {
+    grid-area: division;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#point {
+    grid-area: point;
+}
+
+#backspace {
+    grid-area: backspace;
+}
+
+.display-current {
+    text-align: right;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 35px;
+    border: 1px solid black;
 }

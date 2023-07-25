@@ -14,7 +14,7 @@ function divide(a, b) {
     return a / b;
 }
 
-function calculator(a, operator, b) {
+function result(a, operator, b) {
     switch (operator) {
         case '+':
             return add(a, b);
@@ -25,5 +25,8 @@ function calculator(a, operator, b) {
         case '/':
             return divide(a, b);
     }
-        
 }
+
+// function clear() {
+//     if 
+// }
